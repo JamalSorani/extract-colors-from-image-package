@@ -1,7 +1,7 @@
 name: extract_colors_from_image
 description: Pick color from image (assets/network/file) and get color hexcodes.
 version: 0.0.1
-homepage:
+homepage: https://github.com/JamalSorani/extract-colors-from-image-package
 
 environment:
   sdk: '>=3.0.6 <4.0.0'
