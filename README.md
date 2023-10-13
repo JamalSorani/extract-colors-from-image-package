@@ -11,29 +11,41 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Pick color from image (assets/network/file) and get color hexcodes.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+You can by this package add (asset/network/file) and know the basic colors that make up the image and know the color in the pixels that you want from the image.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+First run flutter pub add extract_colors_from_image
+
+Next Import it:
+import 'package:extract_colors_from_image/extract_colors_from_image.dart';
+
+Finally provide Image either by assets/network/file.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Here there are three examples about how to use this package:
 
-```dart
-const like = 'sample';
-```
+To use assete image:
+    AssetImageBG(
+        assetPath: 'images/space.jpg',
+        backgroundColor: Color.fromARGB(255, 243, 229, 245),
+    ),
 
-## Additional information
+To use network image:
+    NetworkImageBG(
+        networkpath:
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEBx9Wr0-Vrvo7-X_EwAXnCxBrBODj3sjPLE_6DZPA&s',
+        backgroundColor: Color.fromARGB(255, 243, 229, 245),
+    ),
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+To use File image:
+   FileImageBG(
+        backgroundColor: Color.fromARGB(255, 243, 229, 245),
+    ),
+
+
